@@ -1,10 +1,32 @@
 body {
-  background-color: black;
-  color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.js-clock {
+  background-color: black;
+  color: cornsilk;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.form {
+}
+.form input {
+  background-color: black;
+  border: none;
+  padding: 15px 0px;
+  font-size: 25px;
+  margin-left: 100px;
+}
+
+.form input::placeholder {
+  color: white;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  color: wheat;
+  display: block;
 }

@@ -20,7 +20,10 @@ body {
 .form input::placeholder {
   color: white;
 }
-
+.form input:focus {
+  outline: none;
+  color: white;
+}
 .form,
 .greetings {
   display: none;

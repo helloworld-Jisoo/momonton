@@ -1,7 +1,6 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: black;
-  color: cornsilk;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,19 +9,17 @@ body {
 .form {
 }
 .form input {
-  background-color: black;
   border: none;
   padding: 15px 0px;
-  font-size: 25px;
+  font-size: 26px;
   margin-left: 100px;
 }
 
 .form input::placeholder {
-  color: white;
+  font-family: Georgia;
 }
 .form input:focus {
   outline: none;
-  color: white;
 }
 .form,
 .greetings {
@@ -30,6 +27,6 @@ body {
 }
 
 .showing {
-  color: wheat;
   display: block;
+  font-size: larger;
 }

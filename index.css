@@ -1,34 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
+:root {
+  --white: rgba(255, 255, 255, 0.5);
+}
+
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Anonymous Pro", monospace;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-h1 {
-  font-size: 500%;
+.clock {
+  font-size: 150px;
+  margin-top: 100px;
+  color: var(--white);
 }
-
-.form input {
+.form {
+  font-size: 100px;
   border: none;
+  margin-bottom: 20px;
 }
 
 .form input::placeholder {
-  font-family: Georgia;
+  font-family: "Anonymous Pro", monospace;
 }
 .form input:focus {
-  outline: none;
+  border-bottom: 1px solid black;
+  color: black;
 }
 .form,
 .greetings {
   display: none;
 }
-
+.todo-input input::placeholder {
+  font-family: "Anonymous Pro", monospace;
+}
 .showing {
   display: block;
-  font-size: larger;
+  font-size: 50px;
+  color: white;
 }
-
+.todo-list {
+  list-style: none;
+  padding: 0px;
+  color: white;
+}
+.todo-list button {
+  border: none;
+  margin-right: 20px;
+  opacity: 0.8;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -46,4 +68,10 @@ h1 {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.weather {
+  top: 10px;
+  bottom: 5px;
+  color: var(--white);
 }

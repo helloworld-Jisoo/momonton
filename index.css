@@ -8,13 +8,9 @@ body {
 h1 {
   font-size: 500%;
 }
-.form {
-}
+
 .form input {
   border: none;
-  padding: 15px 0px;
-  font-size: 26px;
-  margin-left: 100px;
 }
 
 .form input::placeholder {
